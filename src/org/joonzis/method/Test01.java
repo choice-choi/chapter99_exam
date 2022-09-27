@@ -8,6 +8,24 @@ package org.joonzis.method;
  */
 public class Test01 {
 
+	// 함수 안에서 데이터 출력 = 리턴이 필요 없음
+	static void circleArea(double r) {
+		// 원의 넓이 PI * r * r
+		System.out.println("원의 넓이 : " + (Math.PI * r * r));
+	}
+	
+	// 계산만 하고 끝내는 식
+	static double circleRound(double r) {
+		// 원의 둘레 2 * PI * r
+		return (2 * Math.PI * r);
+	}
+	
+	public static void main(String[] args) {	// 위 두 식에 static 붙여야 함
+		circleArea(1.5);
+		System.out.println("원의 둘레 : " + circleRound(1.5));
+	}
+	
+	
 	/*
 	나의 답안
 	double r;
@@ -40,24 +58,6 @@ public class Test01 {
 
 	}
 	*/
-	
-	// 함수 안에서 데이터 출력 = 리턴이 필요 없음
-	static void circleArea(double r) {
-		// 원의 넓이 PI * r * r
-		System.out.println("원의 넓이 : " + (Math.PI * r * r));
-	}
-	
-	// 계산만 하고 끝내는 식
-	static double circleRound(double r) {
-		// 원의 둘레 2 * PI * r
-		return (2 * Math.PI * r);
-	}
-	
-	public static void main(String[] args) {	// 위 두 식에 static 붙여야 함
-		circleArea(1.5);
-		System.out.println("원의 둘레 : " + circleRound(1.5));
-	}
-	
 	
 	
 	
